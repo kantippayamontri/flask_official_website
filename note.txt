@@ -1,0 +1,11 @@
+flask --app app run #As a shortcut, if the file is named app.py or wsgi.py, you don’t have to use --app ==> only on test not for development sever.
+flask --app app run --debug
+
+Just create a folder called static in your package or next to your module and it will be available at /static on the application.
+
+Flask will look for templates in the templates folder. So if your application is a module, this folder is next to that module, if it’s a package it’s actually inside your package:
+
+python 3.11.7
+
+$ python -c 'import secrets; print(secrets.token_hex())'
+'192b9bdd22ab9ed4d12e236c78afcb9a393ec15f71bbf5dc987d54727823bcbf'

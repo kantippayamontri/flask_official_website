@@ -1,0 +1,10 @@
+<!doctype html>
+<title>Hello from Login</title>
+<h1>Hello from Login</h1>
+{% if username %}
+  <h1>Hello {{ username }}!</h1>
+{% endif %}
+
+{% if error %}
+  <h1>{{error}}</h1>
+{% endif %}

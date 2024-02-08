@@ -1,0 +1,8 @@
+make app in a module in flaskr/__init__.py
+
+--> initialize databse wih command we make in db.py 
+    * if success you will find flaskr.sqlite in instance folder
+    [/] flask --app flaskr init-db
+
+--> run app module 
+    [/] flask --app flaskr run --debug

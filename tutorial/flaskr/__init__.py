@@ -9,7 +9,8 @@ def create_app(test_config=None):
     """instance_relative_config=True tells the app that configuration files are relative to the instance folder. The instance folder is located outside the flaskr package and can hold local data that shouldn’t be committed to version control, such as configuration secrets and the database file."""
     # print(app.instance_path)
     app.config.from_mapping(
-        SECRET_KEY="dev",  # secret key use "dev" for development but for production needs to use random values
+        # SECRET_KEY="dev",  # secret key use "dev" for development but for production needs to use random values
+        SECRET_KEY="17c0b283f57ca4966b4a6f61985ca5a86c50bee016e7df65b5007cf2201fbe5f", # print(secrets.token_hex())
         DATABASE=os.path.join(app.instance_path, "flaskr.sqlite"),
     )
 

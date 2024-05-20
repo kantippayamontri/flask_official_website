@@ -1,0 +1,21 @@
+"""
+Tests are typically located in the tests folder.
+Tests are functions that start with test_, in Python modules that start with test_.
+Tests can also be further grouped in classes that start with Test.
+"""
+
+"""
+try to test the code that you write,
+not the code of libraries that you use, since they are already tested.
+"""
+
+
+for making a test
+1. pip install pytest
+2. 
+
+Note.
+If you have an error about dont found project -> add __init__.py in tests folder
+
+[Run test]
+command: pytest
